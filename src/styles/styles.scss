@@ -23,7 +23,7 @@ p,
 a {
   color: white !important;
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
 }
 
 body {
@@ -93,4 +93,37 @@ section {
   font-weight: 100;
   color: $primary-accent !important;
   font-style: italic;
+}
+
+// section contacts styles
+.section-contacts {
+  padding-top: 5vh;
+  background-color: $secondary-color;
+}
+.section-contacts h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px !important;
+}
+
+.container-contacts {
+  min-height: 100%;
+}
+
+.form-container {
+  padding: 20px;
+  width: 80%;
+  border: 1px solid white;
+}
+
+.contact-items {
+  font-size: 2rem;
+  font-weight: 700;
+  transition: transform 0.3s ease-out;
+  text-decoration: none;
+}
+
+.contact-items:hover {
+  transform: translateY(10px);
 }
