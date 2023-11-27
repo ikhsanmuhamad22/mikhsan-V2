@@ -6,9 +6,13 @@ $accent: #be3144;
 $font-stack: Poppins, sans-serif;
 $font-stack-secend: Raleway, sans-serif;
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 * {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
 }
 
 h1,
@@ -28,26 +32,34 @@ body {
   color: white;
 }
 
-#navbar {
-  padding: 0;
+.navbar {
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
-  background-color: $accent;
   width: 100%;
+  background: $accent;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  padding: 0 20px !important;
 }
 
-#nav-container {
+.nav-list {
+  margin: 0 !important;
   display: flex;
-  justify-content: space-between;
+  list-style-type: none;
 }
 
-.nav-item a {
+.nav-list a {
+  display: block;
   font-size: 21px;
   padding: 20px;
+  text-decoration: none;
 }
 
-.nav-item a:hover {
-  background-color: $three-color;
+.nav-list a:hover {
+  background-color: $secondary-color;
 }
+
+
