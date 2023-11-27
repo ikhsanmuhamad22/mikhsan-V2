@@ -1,7 +1,7 @@
 const SectionContacts = () => {
   return (
     <section className="section-contacts">
-      <h1>Let's Connect's...</h1>
+      <h2>Let's Connect's...</h2>
       <div className="d-flex container-contacts">
         <div className="form d-flex flex-row flex-grow-1 justify-content-center align-items-center">
           <div className="form-container">

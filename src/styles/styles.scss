@@ -66,6 +66,7 @@ body {
 // Section
 section {
   min-height: 100vh;
+  padding: 30px 0;
 }
 
 .section-about {
@@ -98,9 +99,9 @@ section {
 // section contacts styles
 .section-contacts {
   padding-top: 5vh;
-  background-color: $secondary-color;
+  background-color: $primary-color;
 }
-.section-contacts h1 {
+.section-contacts h2 {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
@@ -126,4 +127,30 @@ section {
 
 .contact-items:hover {
   transform: translateY(10px);
+}
+
+// section project styles
+#section-project {
+  background-color: $secondary-color;
+}
+
+#section-project h2 {
+  text-decoration: underline;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 40px !important;
+}
+
+.project {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.project-images {
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: cover;
 }
