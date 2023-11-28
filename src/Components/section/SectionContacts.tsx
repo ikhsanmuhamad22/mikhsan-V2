@@ -44,7 +44,6 @@ const SectionContacts = () => {
   const submitForm = (e: any): void => {
     const { name, value } = e.target;
     e.preventDefault();
-    console.log('submit');
     setPesan({
       ...pesan,
       [name]: value,
@@ -56,8 +55,8 @@ const SectionContacts = () => {
   return (
     <section id="section-contacts">
       <h2>Let's Connect's...</h2>
-      <div className="d-flex container-contacts">
-        <div className="form d-flex flex-row flex-grow-1 justify-content-center align-items-center">
+      <div className="d-flex row container-contacts">
+        <div className="form d-flex flex-row col-md-6 justify-content-center align-items-center">
           <Form onSubmit={submitForm} className="form-container">
             <div className="mb-3 d-flex flex-column gap-2">
               <div>
@@ -72,8 +71,8 @@ const SectionContacts = () => {
                   className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Your name"
-                  min={3}
-                  max={50}
+                  minLength={3}
+                  maxLength={50}
                   required
                 />
               </div>
@@ -129,7 +128,7 @@ const SectionContacts = () => {
             <Button type="submit">Submit</Button>
           </Form>
         </div>
-        <div className="contacts d-flex flex-grow-1 justify-content-center align-items-center">
+        <div className="contacts d-flex col-md-6 justify-content-center align-items-center">
           <div className="contact-links d-flex flex-column gap-5">
             {contacts.map((contact, index) => {
               return (

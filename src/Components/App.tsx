@@ -1,11 +1,13 @@
 import HeaderFixed from './header/HeaderFixed';
-import SectionAbout from './section/SectionAbout';
-import SectionContacts from './section/SectionCotacts';
+import SectionContacts from './section/SectionContacts';
 import SectionProject from './section/SectionProjects';
+import SectionHome from './section/SectionHome';
+import SectionAbout from './section/SectionAbout';
 function App() {
   return (
     <>
       <HeaderFixed />
+      <SectionHome />
       <SectionAbout />
       <SectionProject />
       <SectionContacts />
