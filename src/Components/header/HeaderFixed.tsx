@@ -6,13 +6,13 @@ const HeaderFixed = () => {
       <a href=""></a>
       <ul className="nav-list">
         <li>
-          <a href="#">About</a>
+          <a href="#section-about">About</a>
         </li>
         <li>
-          <a href="#">Works</a>
+          <a href="#section-project">Works</a>
         </li>
         <li>
-          <a href="#">Contacts</a>
+          <a href="#section-contacts">Contacts</a>
         </li>
       </ul>
     </Nav>

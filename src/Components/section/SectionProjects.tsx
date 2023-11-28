@@ -51,10 +51,10 @@ const SectionProject = () => {
                     src={`/images/${project.images}`}
                     alt={project.title}
                   />
-                  <p>{project.title}</p>
+                  <p className="m-3 fs-4 fw-bold">{project.title}</p>
                   <div className="d-flex gap-4 justify-content-center mt-3">
                     {project.linkSite ? (
-                      <a href={project.linkGithub} target="_blank">
+                      <a href={project.linkSite} target="_blank">
                         <Button>Visit site</Button>
                       </a>
                     ) : null}
